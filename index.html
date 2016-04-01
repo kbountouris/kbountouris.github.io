@@ -301,6 +301,7 @@ select {
 </head>
 
 <body>
+	<?php include_once("analyticstracking.php") ?>
 <div class="container">
 
 <div class="header">
@@ -530,87 +531,87 @@ In transmission conditions, packaged information without flow control from sourc
       <ul class="rslides" id="slider1">
         <li>
           <img src="roma1.jpg" alt="">
-          <p class="caption">This is a caption</p>
+          <p class="caption">The grandiose Colosseum, Roma, Italy | August 2015</p>
         </li>
         <li>
           <img src="alassio.jpg" alt="">
-          <p class="caption">This is a caption</p>
+          <p class="caption">Alassio, Italy | May 2015</p>
         </li>
         <li>
           <img src="vienna.jpg" alt="">
-          <p class="caption">This is another caption</p>
+          <p class="caption">The imposing Sch&ouml;nbrunn Palace, Vienna, Austria | December 2015</p>
         </li>
         <li>
           <img src="amsterdam.jpg" alt="">
-          <p class="caption">The third caption</p>
+          <p class="caption">Rijksmuseum, Amsterdam, The Netherlands | April 2015</p>
         </li>
         <li>
           <img src="vatican.jpg" alt="">
-          <p class="caption">This is a caption</p>
+          <p class="caption">St. Peter's Basilica in Piazza San Pietro, Vatican | August 2015 </p>
         </li>
         <li>
           <img src="arachova.jpg" alt="">
-          <p class="caption">This is a caption</p>
+          <p class="caption">The picturesque village of Arachova, Greece | December 2014</p>
         </li>
         <li>
           <img src="utrecht.jpg" alt="">
-          <p class="caption">This is a caption</p>
+          <p class="caption">River Vecht, Utrecht, The Netherlands | April 2015</p>
         </li>
         <li>
           <img src="arles.jpg" alt="">
-          <p class="caption">This is a caption</p>
+          <p class="caption">Ar&egrave;nes d'Arles, Arles, France | May 2015</p>
         </li>
         <li>
           <img src="turin.jpg" alt="">
-          <p class="caption">This is a caption</p>
+          <p class="caption">Statue of Vittorio Emanuele II, first king of Italy, Turin, Italy | March 2015</p>
         </li>
         <li>
           <img src="balos.jpg" alt="">
-          <p class="caption">This is a caption</p>
+          <p class="caption">The paradise of Balos, Chania, Crete, Greece | July 2012 </p>
         </li>
         <li>
           <img src="lisbon.jpg" alt="">
-          <p class="caption">This is a caption</p>
+          <p class="caption">Lisbon, Portugal | June 2015</p>
         </li>
         <li>
           <img src="cannes.jpg" alt="">
-          <p class="caption">This is a caption</p>
+          <p class="caption">Cannes Film Festival, Cannes, France | May 2015</p>
         </li>
         <li>
           <img src="barcelona.jpg" alt="">
-          <p class="caption">This is a caption</p>
+          <p class="caption">Font M&agrave;gica, Montju&iuml;c, Barcelona, Spain | May 2014</p>
         </li>
         <li>
           <img src="stjeancapferrat.jpg" alt="">
-          <p class="caption">This is a caption</p>
+          <p class="caption">St. Jean cap-Ferrat, France | July 2015</p>
         </li>
         <li>
           <img src="cinqueterre.jpg" alt="">
-          <p class="caption">This is a caption</p>
+          <p class="caption">A colorful village in Cinqueterre, Italy | March 2015</p>
         </li>
         <li>
           <img src="telefonica.jpg" alt="" class="rotate90" vspace="75px">
-          <p> The fourth caption</p>
+          <p>Torre Calatrava or Torre Telefonica, Montju&iuml;c, Barcelona, Spain | May 2014</p>
         </li>
         <li>
           <img src="milan2.jpg" alt="">
-          <p class="caption">This is a caption</p>
+          <p class="caption">Duomo di Milano and statue of Vittorio Emanuele, Piazza del Duomo, Milan, Italy | December 2014</p>
         </li>
         <li>
           <img src="monaco.jpg" alt="">
-          <p class="caption">This is a caption</p>
+          <p class="caption">Monaco port, Monaco | September 2013</p>
         </li>
         <li>
           <img src="santorini.jpg" alt="">
-          <p class="caption">This is a caption</p>
+          <p class="caption">The beautiful view from a balcony in Santorini, July 2009</p>
         </li>
         <li>
           <img src="roma2.jpg" alt="">
-          <p class="caption">This is a caption</p>
+          <p class="caption">Piazza Navona, Roma, Italy | August 2015</p>
         </li>
         <li>
           <img src="prague.jpg" alt="">
-          <p class="caption">This is a caption</p>
+          <p class="caption">Karluv Most, Prague, Czech Republic | December 2015</p>
         </li>
         <li>
           <img src="paris.jpg" alt="">
@@ -618,11 +619,11 @@ In transmission conditions, packaged information without flow control from sourc
         </li>
         <li>
           <img src="cinqueterre2.jpg" alt="">
-          <p class="caption">This is a caption</p>
+          <p class="caption">The beautiful village of Vernazza in Cinqueterre, Italy | March 2015</p>
         </li>
         <li>
           <img src="nice.jpg" alt="">
-          <p class="caption">This is a caption</p>
+          <p class="caption">The view of the city and the beach of Nice from the castle, Nice, France</p>
         </li>
         <li>
           <img src="paris2.jpg" alt="">
@@ -630,7 +631,7 @@ In transmission conditions, packaged information without flow control from sourc
         </li>
         <li>
           <img src="chania.jpg" alt="">
-          <p class="caption">This is a caption</p>
+          <p class="caption">The magnificent old port and lighthouse in Chania, Crete, Greece</p>
         </li>
       </ul>
     </div>
@@ -801,7 +802,16 @@ $( "#dialog-link, #icons li" ).hover(
     });
   </script>
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-75861511-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 </body>
 </html>
